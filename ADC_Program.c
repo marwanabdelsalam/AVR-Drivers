@@ -81,7 +81,6 @@ void ADC_VoidInit(void)
 	 */
 	//Disable Interrupt
 	SetBit(ADCSRA,ADIE);
-	SetBit(SREG,I);					// Global interrubt
 
 
 
@@ -149,7 +148,7 @@ u16 ADC_U16ReadDigitalValue(u8 Copy_U8ChannelNumb)
 
 }
 
-
+//if we work with free running we have to call this function just once in the main
 void ADC_VoidStartConversion(void)
 {
 	//start conversion

@@ -17,7 +17,6 @@
 #define ADCL *((volatile u8*)(0x24))
 #define SFIOR *((volatile u8*)(0x50))
 #define ADC_DHL *((volatile u16*)(0x24))		//3shan y2ra el low w el high m3a b3d(base address 0x24)
-#define SREG *((volatile u8*)0x5F)
 
 
 //ISR Declaration
